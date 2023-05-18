@@ -152,7 +152,7 @@ grafana_smtp: {}
 
 # Enable grafana alerting mechanism
 grafana_alerting:
-  execute_alerts: true
+#  execute_alerts: true
 #  error_or_timeout: 'alerting'
 #  nodata_or_nullvalues: 'no_data'
 #  concurrent_render_limit: 5
