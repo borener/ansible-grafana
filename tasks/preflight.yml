@@ -88,5 +88,5 @@
   fail:
     msg: "Please specify only alerting or unified_alerting as both can not be used in conjunction"
   when:
-    - grafana_unified_alerting is defined
-    - grafana_alerting is defined
+    - grafana_alerting.execute_alerts is defined
+    - grafana_unified_alerting.execute_alerts is defined
