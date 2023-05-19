@@ -160,8 +160,6 @@ grafana_alerting: {}
 # Enable grafana alerting mechanism
 unified_alerting: {}
 #  execute_alerts: true
-#  enabled: true
-#  execute_alerts:
 #  ha_listen_address: 
 #  ha_peers:
 
