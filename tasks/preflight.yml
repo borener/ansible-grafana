@@ -83,3 +83,10 @@
   when:
     - grafana_server.protocol is defined and grafana_server.protocol == 'socket'
     - grafana_server.socket is undefined or grafana_server.socket == ''
+    
+- name: Fail when alerting and unified_alerting are both defined
+  fail:
+    msg: "Please specify only alerting or unified_alerting as both can not be used in conjunction"
+  when:
+    - grafana_alerting.execute_alerts is defined
+    - grafana_unified_alerting.execute_alerts is defined
